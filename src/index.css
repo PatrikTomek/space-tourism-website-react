@@ -12,15 +12,7 @@
 }
 
 /* Reset margins */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-figure,
-picture {
+* {
   margin: 0;
 }
 
@@ -122,7 +114,7 @@ h5 {
   font-weight: 400;
   font-size: 14px;
   line-height: 16.8px;
-  letter-spacing: 2.35px;
+  letter-spacing: 2.36px;
 }
 .nav-text {
   font-family: "Barlow Condensed", sans-serif;
@@ -136,6 +128,31 @@ h5 {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
+}
+.page_header {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-align: left;
+  width: 382px;
+  height: 34px;
+  margin-left: 166.5px;
+  margin-top: 212px;
+}
+.page-num_header {
+  opacity: 0.25;
+  font-weight: 700;
+  margin-right: 15px;
+  font-size: 26px;
+}
+.planet_img {
+  position: absolute;
+  width: 445px;
+  height: 445px;
+  margin-left: 230px;
+  top: 343px;
 }
 
 /* Interactive elements */
@@ -173,21 +190,150 @@ h5 {
 /*     Custom code     */
 /* ------------------- */
 
-.home {
+.container {
   height: 100%;
   width: 100%;
-  background-image: url("./assets/home/background-home-desktop.jpg");
-  background-size: cover;
 }
-.home_content-container {
+.page_content-container {
   max-width: 1440px;
   height: 900px;
   margin-inline: auto;
   border: 2px solid red;
+}
+
+/* Navigation */
+
+.nav_container {
+  position: absolute;
+  width: 1385px;
+  height: 96px;
+  margin-left: 55px;
+  top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 48px;
+  height: 48px;
+  margin-block: auto;
+}
+.nav-line {
+  position: absolute;
+  width: 473px;
+  height: 1px;
+  left: 115px;
+  top: 50px;
+  background: var(--white);
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  z-index: 10;
+}
+.main-nav {
+  width: 830px;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+}
+.main-nav_list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  width: 542px;
+  height: 19px;
+}
+.main-nav_item {
+  margin-inline: 30px;
+  padding-bottom: 53px;
+}
+.nav_item {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+.main-nav_span {
+  margin-right: 12px;
+  font-weight: 700;
+}
+.main-nav_item__active {
+  border-bottom: 3px solid var(--white);
+}
+
+/* Destination nav */
+.destination-nav {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0px;
+  padding-left: 0px;
+}
+.destination-nav_item {
+  list-style-type: none;
+  color: var(--light);
+  padding-bottom: 10px;
+  margin-right: 35px;
+  margin-left: 0px;
+}
+.destination-nav_item__active {
+  color: var(--white);
+  border-bottom: 3px solid var(--white);
+}
+.main-nav_item:hover,
+.destination-nav_item:hover {
+  cursor: pointer;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.home {
+  background-image: url("./assets/home/background-home-desktop.jpg");
 }
 .home_text_container {
   width: 450px;
   height: 382px;
   margin-left: 165px;
   margin-top: 387px;
+}
+
+.planet_header {
+  margin-top: 37px;
+}
+.destination-moon {
+  background-image: url("./assets/destination/background-destination-desktop.jpg");
+}
+
+.planet__text_container {
+  width: 445px;
+  height: 472px;
+  margin-left: 832px;
+  margin-top: 64px;
+}
+.p_planet {
+  color: var(--light);
+  font-family: "Barlow", sans-serif;
+  margin-top: 14px;
+}
+.planet_text_line {
+  background-color: #383b4b;
+  border: none;
+  height: 1px;
+  width: 444px;
+  margin-top: 54px;
+}
+.planet-details {
+  display: flex;
+}
+.planet-details_containers {
+  height: 61px;
+  margin-top: 28px;
+  margin-right: 79px;
+}
+.planet-details_sub-header {
+  color: var(--light);
+}
+.planet-details_info {
+  margin-top: 12px;
 }
