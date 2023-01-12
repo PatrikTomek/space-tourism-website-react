@@ -165,8 +165,9 @@ h5 {
 
 /* Interactive elements */
 
-.nav-link_active {
+.main-nav_list a.active {
   border-bottom: 3px solid var(--white);
+  padding-bottom: 53px;
 }
 .nav--link:hover {
   border-bottom: 3px solid hsla(0, 0%, 100%, 0.5);
@@ -248,12 +249,12 @@ h5 {
 .main-nav_list {
   display: flex;
   justify-content: center;
+  gap: 48px;
   list-style-type: none;
   width: 542px;
   height: 19px;
 }
 .main-nav_item {
-  margin-inline: 30px;
   padding-bottom: 35px;
   color: var(--white);
 }
@@ -266,7 +267,7 @@ h5 {
   text-transform: uppercase;
 }
 .main-nav_span {
-  margin-right: 12px;
+  margin-right: 11px;
   font-weight: 700;
 }
 .main-nav_item__active {
@@ -345,4 +346,40 @@ h5 {
 }
 .planet-details_info {
   margin-top: 12px;
+}
+
+/* CREW */
+
+.crew {
+  background-image: url("./assets/crew/background-crew-desktop.jpg");
+  background-size: cover;
+}
+.crew-role {
+  width: 214px;
+  height: 37px;
+  margin-left: 165.5px;
+  margin-top: 154px;
+  opacity: 0.5;
+}
+.crew-name {
+  width: 488px;
+  height: 64px;
+  margin-left: 165.5px;
+  margin-top: 15px;
+}
+.crew-bio {
+  width: 444px;
+  height: 128px;
+  margin-left: 165.5px;
+  margin-top: 27px;
+  color: var(--light);
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.crew-img {
+  position: absolute;
+  left: 870px;
+  top: 198px;
 }

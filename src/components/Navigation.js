@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
   return (
@@ -18,22 +18,26 @@ const Navigation = () => {
       <div className="nav-line"></div>
       <nav className="main-nav">
         <ul className="main-nav_list">
-          <Link to="/" className="main-nav_link">
-            <li className="main-nav_item nav_item">
+          <NavLink to="/">
+            <li className="main-nav-home main-nav_item nav_item">
               <span className="main-nav_span">00</span>Home
             </li>
-          </Link>
-          <Link to="/destination" className="main-nav_link">
-            <li className="main-nav_item nav_item main-nav_item__active">
+          </NavLink>
+          <NavLink to="/destination" className="main-nav_link">
+            <li className="main-nav_item nav_item">
               <span className="main-nav_span">01</span>Destination
             </li>
-          </Link>
-          <li className="main-nav_item nav_item">
-            <span className="main-nav_span">02</span>Crew
-          </li>
-          <li className="main-nav_item nav_item">
-            <span className="main-nav_span">03</span>Technology
-          </li>
+          </NavLink>
+          <NavLink to="/crew" className="main-nav_link">
+            <li className="main-nav_item nav_item">
+              <span className="main-nav_span">02</span>Crew
+            </li>
+          </NavLink>
+          <NavLink to="technology" className="main-nav_link">
+            <li className="main-nav_item nav_item">
+              <span className="main-nav_span">03</span>Technology
+            </li>
+          </NavLink>
         </ul>
       </nav>
     </div>

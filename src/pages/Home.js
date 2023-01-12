@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import MainBtn from "../components/MainBtn";
 import Navigation from "../components/Navigation";
 
