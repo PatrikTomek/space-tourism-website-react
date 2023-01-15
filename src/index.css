@@ -14,6 +14,7 @@
 /* Reset margins */
 * {
   margin: 0;
+  padding: 0;
 }
 
 /* set up the body */
@@ -41,6 +42,10 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /* remove animations for people who've turned them off */
@@ -367,19 +372,103 @@ h5 {
   margin-left: 165.5px;
   margin-top: 15px;
 }
-.crew-bio {
+.bio {
   width: 444px;
   height: 128px;
-  margin-left: 165.5px;
-  margin-top: 27px;
   color: var(--light);
   font-family: "Barlow", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
 }
+.crew-bio {
+  margin-left: 165.5px;
+  margin-top: 27px;
+}
+.crew-nav {
+  margin-top: 120px;
+  margin-left: 167px;
+}
+.crew-nav,
+.crew-nav_list {
+  width: 132px;
+  height: 15px;
+  display: flex;
+  gap: 24px;
+}
+.crew-nav_item {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.17);
+}
+.crew-nav_item:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.crew-nav_item_active {
+  background-color: var(--white);
+}
 .crew-img {
-  position: absolute;
-  left: 870px;
-  top: 198px;
+  float: right;
+  margin-top: -608px;
+  margin-right: 137px;
+}
+
+/* Technology */
+
+.technology {
+  background-image: url("./assets/technology/background-technology-desktop.jpg");
+  background-size: cover;
+}
+.tech-nav_list {
+  width: 82px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.tech-nav_item {
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  text-align: center;
+}
+.tech-nav_item:hover {
+  cursor: pointer;
+  border: 1px solid var(--white);
+}
+.tech-nav_item_active {
+  color: var(--dark);
+  background-color: var(--white);
+}
+.tech-nav_item h4 {
+  margin-top: 22px;
+}
+.tech-description_container {
+  display: flex;
+  gap: 80px;
+  margin-top: 137px;
+  margin-left: 165px;
+}
+.technology-text_container {
+  width: 470px;
+  height: 303px;
+}
+.tech-intro {
+  color: var(--light);
+}
+.tech-bio_header {
+  margin-top: 11px;
+}
+.tech-bio {
+  margin-top: 17px;
+}
+.tech-img {
+  width: 515px;
+  height: 527px;
+  float: right;
+  margin-top: -410px;
 }

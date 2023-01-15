@@ -33,7 +33,7 @@ const Navigation = () => {
               <span className="main-nav_span">02</span>Crew
             </li>
           </NavLink>
-          <NavLink to="technology" className="main-nav_link">
+          <NavLink to="/technology" className="main-nav_link">
             <li className="main-nav_item nav_item">
               <span className="main-nav_span">03</span>Technology
             </li>

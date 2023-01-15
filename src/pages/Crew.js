@@ -17,8 +17,16 @@ const Crew = () => {
           <div className="crew-text_container">
             <h4 className="crew-role">{crewData.role}</h4>
             <h3 className="crew-name">{crewData.name}</h3>
-            <p className="crew-bio">{crewData.bio}</p>
+            <p className="bio crew-bio">{crewData.bio}</p>
           </div>
+          <nav className="crew-nav">
+            <ul className="crew-nav_list">
+              <li className="crew-nav_item_active crew-nav_item"></li>
+              <li className="crew-nav_item"></li>
+              <li className="crew-nav_item"></li>
+              <li className="crew-nav_item"></li>
+            </ul>
+          </nav>
           <img src={comanderImage} alt="" className="crew-img" />
         </div>
       </div>
