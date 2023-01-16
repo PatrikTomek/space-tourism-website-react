@@ -351,6 +351,7 @@ h5 {
 }
 .planet-details_info {
   margin-top: 12px;
+  white-space: nowrap;
 }
 
 /* CREW */
