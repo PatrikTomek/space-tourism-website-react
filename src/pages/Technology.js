@@ -1,10 +1,23 @@
-import React from "react";
-import image from "../assets/technology/image-launch-vehicle-portrait.jpg"
+import React, { useState } from "react";
 import data from "../data.json";
 import Navigation from "../components/Navigation";
 
 const Technology = () => {
-  const techData = data.technology[0];
+  const [techData, setTechData] = useState(data.technology[0]);
+
+  const firstTechData = data.technology[0];
+  const secondTechData = data.technology[1];
+  const thirdTechData = data.technology[2];
+
+  const handleFirstTechData = () => {
+    setTechData(firstTechData);
+  };
+  const handleSecondTechData = () => {
+    setTechData(secondTechData);
+  };
+  const handleThirdTechData = () => {
+    setTechData(thirdTechData);
+  };
 
   return (
     <div className="container">
@@ -16,13 +29,16 @@ const Technology = () => {
         <div className="tech-description_container">
           <nav className="tech-nav">
             <ul className="tech-nav_list">
-              <li className="tech-nav_item tech-nav_item_active">
+              <li
+                onClick={handleFirstTechData}
+                className="tech-nav_item tech-nav_item_active"
+              >
                 <h4>1</h4>
               </li>
-              <li className="tech-nav_item">
+              <li onClick={handleSecondTechData} className="tech-nav_item">
                 <h4>2</h4>
               </li>
-              <li className="tech-nav_item">
+              <li onClick={handleThirdTechData} className="tech-nav_item">
                 <h4>3</h4>
               </li>
             </ul>

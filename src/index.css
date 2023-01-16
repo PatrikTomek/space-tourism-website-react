@@ -366,12 +366,14 @@ h5 {
   margin-left: 165.5px;
   margin-top: 154px;
   opacity: 0.5;
+  white-space: nowrap;
 }
 .crew-name {
   width: 488px;
   height: 64px;
   margin-left: 165.5px;
   margin-top: 15px;
+  white-space: nowrap;
 }
 .bio {
   width: 444px;

@@ -1,10 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import data from "../data.json";
 import comanderImage from "../assets/crew/image-douglas-hurley.png";
 import Navigation from "../components/Navigation";
 
 const Crew = () => {
-  const crewData = data.crew[0];
+  const [crewData, setCrewData] = useState(data.crew[0]);
+
+  const commanderData = data.crew[0];
+  const missionSpecialistData = data.crew[1];
+  const pilotData = data.crew[2];
+  const flightEngineerData = data.crew[3];
+
+  const handleCommanderData = () => {
+    setCrewData(commanderData);
+  };
+  const handleMissionSpecialistData = () => {
+    setCrewData(missionSpecialistData);
+  };
+  const handlePilotData = () => {
+    setCrewData(pilotData);
+  };
+  const handleFlightEngineerData = () => {
+    setCrewData(flightEngineerData);
+  };
 
   return (
     <div className="container">
@@ -21,10 +39,19 @@ const Crew = () => {
           </div>
           <nav className="crew-nav">
             <ul className="crew-nav_list">
-              <li className="crew-nav_item_active crew-nav_item"></li>
-              <li className="crew-nav_item"></li>
-              <li className="crew-nav_item"></li>
-              <li className="crew-nav_item"></li>
+              <li
+                onClick={handleCommanderData}
+                className="crew-nav_item_active crew-nav_item"
+              ></li>
+              <li
+                onClick={handleMissionSpecialistData}
+                className="crew-nav_item"
+              ></li>
+              <li onClick={handlePilotData} className="crew-nav_item"></li>
+              <li
+                onClick={handleFlightEngineerData}
+                className="crew-nav_item"
+              ></li>
             </ul>
           </nav>
           <img src={comanderImage} alt="" className="crew-img" />
