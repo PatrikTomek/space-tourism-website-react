@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import data from "../data.json";
+import firstTechImg from "../assets/technology/image-launch-vehicle-portrait.jpg";
+import secondTechImg from "../assets/technology/image-spaceport-portrait.jpg";
+import thirdTechImg from "../assets/technology/image-space-capsule-portrait.jpg";
 import Navigation from "../components/Navigation";
 
 const Technology = () => {
   const [techData, setTechData] = useState(data.technology[0]);
+  const [techImg, setTechImg] = useState(firstTechImg);
 
   const firstTechData = data.technology[0];
   const secondTechData = data.technology[1];
@@ -11,12 +15,15 @@ const Technology = () => {
 
   const handleFirstTechData = () => {
     setTechData(firstTechData);
+    setTechImg(firstTechImg);
   };
   const handleSecondTechData = () => {
     setTechData(secondTechData);
+    setTechImg(secondTechImg);
   };
   const handleThirdTechData = () => {
     setTechData(thirdTechData);
+    setTechImg(thirdTechImg);
   };
 
   return (
@@ -49,7 +56,7 @@ const Technology = () => {
             <p className="bio tech-bio">{techData.description}</p>
           </div>
         </div>
-        <img src={techData.images.portrait} alt="" className="tech-img" />
+        <img src={techImg} alt="" className="tech-img" />
       </div>
     </div>
   );

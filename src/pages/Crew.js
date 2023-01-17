@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import data from "../data.json";
-import comanderImage from "../assets/crew/image-douglas-hurley.png";
+import commanderImg from "../assets/crew/image-douglas-hurley.png";
+import missionSpecialistImg from "../assets/crew/image-mark-shuttleworth.png";
+import pilotImg from "../assets/crew/image-victor-glover.png";
+import flightEngineerImg from "../assets/crew/image-anousheh-ansari.png";
 import Navigation from "../components/Navigation";
 
 const Crew = () => {
   const [crewData, setCrewData] = useState(data.crew[0]);
+  const [crewImg, setCrewImg] = useState(commanderImg);
 
   const commanderData = data.crew[0];
   const missionSpecialistData = data.crew[1];
@@ -13,15 +17,19 @@ const Crew = () => {
 
   const handleCommanderData = () => {
     setCrewData(commanderData);
+    setCrewImg(commanderImg);
   };
   const handleMissionSpecialistData = () => {
     setCrewData(missionSpecialistData);
+    setCrewImg(missionSpecialistImg);
   };
   const handlePilotData = () => {
     setCrewData(pilotData);
+    setCrewImg(pilotImg);
   };
   const handleFlightEngineerData = () => {
     setCrewData(flightEngineerData);
+    setCrewImg(flightEngineerImg);
   };
 
   return (
@@ -54,7 +62,7 @@ const Crew = () => {
               ></li>
             </ul>
           </nav>
-          <img src={comanderImage} alt="" className="crew-img" />
+          <img src={crewImg} alt="" className="crew-img" />
         </div>
       </div>
     </div>

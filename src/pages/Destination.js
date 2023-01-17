@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import data from "../data.json";
+import moonImg from "../assets/destination/image-moon.png";
+import marsImg from "../assets/destination/image-mars.png";
+import europaImg from "../assets/destination/image-europa.png";
+import titanImg from "../assets/destination/image-titan.png";
 import Navigation from "../components/Navigation";
 
 const Destination = () => {
   const [destinationData, setDestinationData] = useState(data.destinations[0]);
+  const [planetImg, setPlanetImg] = useState(moonImg);
 
   const moonData = data.destinations[0];
   const marsData = data.destinations[1];
@@ -12,15 +17,19 @@ const Destination = () => {
 
   const handleMoonData = () => {
     setDestinationData(moonData);
+    setPlanetImg(moonImg);
   };
   const handleMarsData = () => {
     setDestinationData(marsData);
+    setPlanetImg(marsImg);
   };
   const handleEuropaData = () => {
     setDestinationData(europaData);
+    setPlanetImg(europaImg);
   };
   const handleTitanData = () => {
     setDestinationData(titanData);
+    setPlanetImg(titanImg);
   };
 
   return (
@@ -30,7 +39,7 @@ const Destination = () => {
         <h6 className="page_header">
           <span className="page-num_header">01 </span>Pick your destination
         </h6>
-        <img src={destinationData.images.png} alt="Moon" className="moon_img planet_img" />
+        <img src={planetImg} alt="Moon" className="moon_img planet_img" />
         <div className="destination-moon__text_container planet__text_container">
           <ul className="destination-nav">
             <li
