@@ -1,12 +1,11 @@
 import React from "react";
-import MainBtn from "../components/MainBtn";
-import Navigation from "../components/Navigation";
+import MainBtn from "./components/MainBtn";
+import DestinationMoon from "./pages/DestinationMoon";
 
-const Home = () => {
+const App = () => {
   return (
-    <div className="container">
-      <div className="home page_content-container">
-        <Navigation />
+    <div className="home container">
+      <div className="page_content-container">
         <div className="home_text_container">
           <h5>So, you want to travel to</h5>
           <h1>Space</h1>
@@ -19,8 +18,9 @@ const Home = () => {
         </div>
         <MainBtn />
       </div>
+      <DestinationMoon />
     </div>
   );
 };
 
-export default Home;
+export default App;

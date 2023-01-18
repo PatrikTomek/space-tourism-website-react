@@ -305,6 +305,7 @@ h5 {
 
 .home {
   background-image: url("./assets/home/background-home-desktop.jpg");
+  background-size: cover;
 }
 .home_text_container {
   width: 450px;
@@ -474,4 +475,81 @@ h5 {
   height: 527px;
   float: right;
   margin-top: -410px;
+}
+
+/* RESPONSIVE */
+/* Tablet */
+
+@media screen and (max-width: 1350px) {
+  .container {
+    max-width: 768px;
+    margin-inline: auto;
+  }
+  .page_content-container {
+    max-width: 768px;
+    height: 1024px;
+    margin-inline: auto;
+  }
+
+  /* Homepage */
+  .home {
+    background-image: url("./assets/home/background-home-tablet.jpg");
+    background-size: cover;
+  }
+  .nav_container {
+    width: 729px;
+    height: 96px;
+    margin-left: 39px;
+    top: 0px;
+    display: flex;
+  }
+  .logo {
+  }
+  .main-nav {
+    width: 450px;
+    height: 96px;
+    margin: 0px;
+  }
+  .main-nav_list {
+    gap: 37px;
+  }
+  .main-nav_item {
+    font-size: 14px;
+  }
+  .nav-line,
+  .main-nav_span {
+    display: none;
+  }
+
+  .home_text_container {
+    margin-top: 202px;
+    text-align: center;
+  }
+  .home_text_container h5 {
+    margin-top: 24px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
+  .home_text_container h1 {
+    width: 445px;
+    height: 150px;
+    margin-top: 24px;
+    line-height: 150px;
+  }
+  .home_text_container p {
+    height: 112px;
+    width: 444px;
+    font-family: "Barlow";
+    line-height: 28px;
+    color: var(--light);
+    margin-top: 24px;
+  }
+  .lp-main_btn {
+    margin-inline: auto;
+    margin-top: 156px;
+    margin-left: 250px;
+  }
+
+  /* Destination page */
 }
