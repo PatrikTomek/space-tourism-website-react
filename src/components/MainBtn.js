@@ -3,7 +3,9 @@ import React from "react";
 const MainBtn = () => {
   return (
     <div>
-      <button className="lp-main_btn">Explore</button>
+      <button className="lp-main_btn">
+        Explore
+      </button>
     </div>
   );
 };

@@ -33,30 +33,32 @@ const Technology = () => {
         <h6 className="page_header">
           <span className="page-num_header">03 </span>Space launch 101
         </h6>
-        <div className="tech-description_container">
-          <nav className="tech-nav">
-            <ul className="tech-nav_list">
-              <li
-                onClick={handleFirstTechData}
-                className="tech-nav_item tech-nav_item_active"
-              >
-                <h4>1</h4>
-              </li>
-              <li onClick={handleSecondTechData} className="tech-nav_item">
-                <h4>2</h4>
-              </li>
-              <li onClick={handleThirdTechData} className="tech-nav_item">
-                <h4>3</h4>
-              </li>
-            </ul>
-          </nav>
-          <div className="technology-text_container">
-            <h4 className="tech-intro nav-text">The terminology...</h4>
-            <h3 className="tech-bio_header">{techData.name}</h3>
-            <p className="bio tech-bio">{techData.description}</p>
+        <div className="tech-content_container">
+          <div className="tech-description_container">
+            <nav className="tech-nav">
+              <ul className="tech-nav_list">
+                <li
+                  onClick={handleFirstTechData}
+                  className="tech-nav_item tech-nav_item_active"
+                >
+                  <h4>1</h4>
+                </li>
+                <li onClick={handleSecondTechData} className="tech-nav_item">
+                  <h4>2</h4>
+                </li>
+                <li onClick={handleThirdTechData} className="tech-nav_item">
+                  <h4>3</h4>
+                </li>
+              </ul>
+            </nav>
+            <div className="technology-text_container">
+              <h4 className="tech-intro nav-text">The terminology...</h4>
+              <h3 className="tech-bio_header">{techData.name}</h3>
+              <p className="bio tech-bio">{techData.description}</p>
+            </div>
           </div>
+          <img src={techImg} alt="" className="tech-img" />
         </div>
-        <img src={techImg} alt="" className="tech-img" />
       </div>
     </div>
   );
