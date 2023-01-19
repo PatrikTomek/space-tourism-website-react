@@ -576,7 +576,7 @@ h5 {
     width: 100%;
     margin: auto;
     text-align: center;
-    margin-top: 53px;
+    margin-top: 28px;
     display: grid;
     align-content: center;
     justify-items: center;
@@ -616,4 +616,59 @@ h5 {
   }
 
   /* Crew page */
+
+  .crew {
+    background-image: url("./assets/crew/background-crew-tablet.jpg");
+  }
+  .crew-member {
+    display: grid;
+    justify-items: center;
+  }
+  .crew-text_container {
+    height: 232px;
+    margin-top: 60px;
+  }
+  .crew-text_container *,
+  .crew-nav {
+    margin: 0px;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+  .crew-role {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .crew-name {
+    width: auto;
+    font-size: 40px;
+    margin-top: 2px;
+  }
+  .crew-bio {
+    height: 84px;
+    width: 592px;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 10px;
+  }
+  .crew-nav {
+    width: 88px;
+    height: 10px;
+  }
+  .crew-nav_list {
+    gap: 16px;
+  }
+  .crew-nav_item {
+    width: 10px;
+    height: 10px;
+  }
+
+  .crew-img {
+    height: 500px;
+    float: none;
+    margin: 0px;
+    margin-top: 40px;
+  }
+
+  /* Technology page */
 }
