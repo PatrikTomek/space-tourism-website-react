@@ -490,6 +490,19 @@ h5 {
     height: 1024px;
     margin-inline: auto;
   }
+  .page_header {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    margin-left: 38.5px;
+    margin-top: 136px;
+  }
+  .page-num_header {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    margin-right: 10px;
+  }
 
   /* Homepage */
   .home {
@@ -552,4 +565,55 @@ h5 {
   }
 
   /* Destination page */
+
+  .planet_img {
+    position: inherit;
+    width: 300px;
+    height: 300px;
+    margin-top: 60px;
+  }
+  .planet__text_container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 53px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+  }
+  .destination-nav {
+    justify-content: center;
+    width: 285.5px;
+    height: 34px;
+    gap: 35px;
+  }
+  .destination-nav_item {
+    margin: 0px;
+  }
+  .planet_header {
+    font-size: 80px;
+    margin-top: 32px;
+    line-height: 92px;
+  }
+  .p_planet {
+    height: 84px;
+    width: 573px;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 8px;
+  }
+  .planet_text_line {
+    width: 573px;
+    margin-top: 49px;
+  }
+  .planet-details {
+    width: 573px;
+    height: 90px;
+  }
+  .planet-details_info {
+    height: 32px;
+    width: 216px;
+  }
+
+  /* Crew page */
 }
