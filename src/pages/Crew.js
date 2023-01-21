@@ -9,27 +9,32 @@ import Navigation from "../components/Navigation";
 const Crew = () => {
   const [crewData, setCrewData] = useState(data.crew[0]);
   const [crewImg, setCrewImg] = useState(commanderImg);
+  const [toggleCrewTab, setToggleCrewTab] = useState(0);
 
   const commanderData = data.crew[0];
   const missionSpecialistData = data.crew[1];
   const pilotData = data.crew[2];
   const flightEngineerData = data.crew[3];
 
-  const handleCommanderData = () => {
+  const handleCommanderData = (index) => {
     setCrewData(commanderData);
     setCrewImg(commanderImg);
+    setToggleCrewTab(index);
   };
-  const handleMissionSpecialistData = () => {
+  const handleMissionSpecialistData = (index) => {
     setCrewData(missionSpecialistData);
     setCrewImg(missionSpecialistImg);
+    setToggleCrewTab(index);
   };
-  const handlePilotData = () => {
+  const handlePilotData = (index) => {
     setCrewData(pilotData);
     setCrewImg(pilotImg);
+    setToggleCrewTab(index);
   };
-  const handleFlightEngineerData = () => {
+  const handleFlightEngineerData = (index) => {
     setCrewData(flightEngineerData);
     setCrewImg(flightEngineerImg);
+    setToggleCrewTab(index);
   };
 
   return (
@@ -48,17 +53,36 @@ const Crew = () => {
           <nav className="crew-nav">
             <ul className="crew-nav_list">
               <li
-                onClick={handleCommanderData}
-                className="crew-nav_item_active crew-nav_item"
+                onClick={() => handleCommanderData(0)}
+                className={
+                  toggleCrewTab == 0
+                    ? "crew-nav_item_active crew-nav_item"
+                    : "crew-nav_item"
+                }
               ></li>
               <li
-                onClick={handleMissionSpecialistData}
-                className="crew-nav_item"
+                onClick={() => handleMissionSpecialistData(1)}
+                className={
+                  toggleCrewTab == 1
+                    ? "crew-nav_item_active crew-nav_item"
+                    : "crew-nav_item"
+                }
               ></li>
-              <li onClick={handlePilotData} className="crew-nav_item"></li>
               <li
-                onClick={handleFlightEngineerData}
-                className="crew-nav_item"
+                onClick={() => handlePilotData(2)}
+                className={
+                  toggleCrewTab == 2
+                    ? "crew-nav_item_active crew-nav_item"
+                    : "crew-nav_item"
+                }
+              ></li>
+              <li
+                onClick={() => handleFlightEngineerData(3)}
+                className={
+                  toggleCrewTab == 3
+                    ? "crew-nav_item_active crew-nav_item"
+                    : "crew-nav_item"
+                }
               ></li>
             </ul>
           </nav>

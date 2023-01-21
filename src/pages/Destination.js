@@ -9,27 +9,32 @@ import Navigation from "../components/Navigation";
 const Destination = () => {
   const [destinationData, setDestinationData] = useState(data.destinations[0]);
   const [planetImg, setPlanetImg] = useState(moonImg);
+  const [toggleDestTab, setToggleDestTab] = useState(0);
 
   const moonData = data.destinations[0];
   const marsData = data.destinations[1];
   const europaData = data.destinations[2];
   const titanData = data.destinations[3];
 
-  const handleMoonData = () => {
+  const handleMoonData = (index) => {
     setDestinationData(moonData);
     setPlanetImg(moonImg);
+    setToggleDestTab(index);
   };
-  const handleMarsData = () => {
+  const handleMarsData = (index) => {
     setDestinationData(marsData);
     setPlanetImg(marsImg);
+    setToggleDestTab(index);
   };
-  const handleEuropaData = () => {
+  const handleEuropaData = (index) => {
     setDestinationData(europaData);
     setPlanetImg(europaImg);
+    setToggleDestTab(index);
   };
-  const handleTitanData = () => {
+  const handleTitanData = (index) => {
     setDestinationData(titanData);
     setPlanetImg(titanImg);
+    setToggleDestTab(index);
   };
 
   return (
@@ -43,26 +48,42 @@ const Destination = () => {
         <div className="destination-moon__text_container planet__text_container">
           <ul className="destination-nav">
             <li
-              onClick={handleMoonData}
-              className="destination-nav_item nav_item destination-nav_item__active"
+              onClick={() => handleMoonData(0)}
+              className={
+                toggleDestTab == 0
+                  ? "destination-nav_item nav_item destination-nav_item__active"
+                  : "destination-nav_item nav_item"
+              }
             >
               Moon
             </li>
             <li
-              onClick={handleMarsData}
-              className="destination-nav_item nav_item"
+              onClick={() => handleMarsData(1)}
+              className={
+                toggleDestTab == 1
+                  ? "destination-nav_item nav_item destination-nav_item__active"
+                  : "destination-nav_item nav_item"
+              }
             >
               Mars
             </li>
             <li
-              onClick={handleEuropaData}
-              className="destination-nav_item nav_item"
+              onClick={() => handleEuropaData(2)}
+              className={
+                toggleDestTab == 2
+                  ? "destination-nav_item nav_item destination-nav_item__active"
+                  : "destination-nav_item nav_item"
+              }
             >
               Europa
             </li>
             <li
-              onClick={handleTitanData}
-              className="destination-nav_item nav_item"
+              onClick={() => handleTitanData(3)}
+              className={
+                toggleDestTab == 3
+                  ? "destination-nav_item nav_item destination-nav_item__active"
+                  : "destination-nav_item nav_item"
+              }
             >
               Titan
             </li>

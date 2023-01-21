@@ -8,22 +8,26 @@ import Navigation from "../components/Navigation";
 const Technology = () => {
   const [techData, setTechData] = useState(data.technology[0]);
   const [techImg, setTechImg] = useState(firstTechImg);
+  const [toggleTechTab, setToggleTechTab] = useState(0);
 
   const firstTechData = data.technology[0];
   const secondTechData = data.technology[1];
   const thirdTechData = data.technology[2];
 
-  const handleFirstTechData = () => {
+  const handleFirstTechData = (index) => {
     setTechData(firstTechData);
     setTechImg(firstTechImg);
+    setToggleTechTab(index);
   };
-  const handleSecondTechData = () => {
+  const handleSecondTechData = (index) => {
     setTechData(secondTechData);
     setTechImg(secondTechImg);
+    setToggleTechTab(index);
   };
-  const handleThirdTechData = () => {
+  const handleThirdTechData = (index) => {
     setTechData(thirdTechData);
     setTechImg(thirdTechImg);
+    setToggleTechTab(index);
   };
 
   return (
@@ -38,15 +42,33 @@ const Technology = () => {
             <nav className="tech-nav">
               <ul className="tech-nav_list">
                 <li
-                  onClick={handleFirstTechData}
-                  className="tech-nav_item tech-nav_item_active"
+                  onClick={() => handleFirstTechData(0)}
+                  className={
+                    toggleTechTab == 0
+                      ? "tech-nav_item tech-nav_item_active"
+                      : "tech-nav_item"
+                  }
                 >
                   <h4>1</h4>
                 </li>
-                <li onClick={handleSecondTechData} className="tech-nav_item">
+                <li
+                  onClick={() => handleSecondTechData(1)}
+                  className={
+                    toggleTechTab == 1
+                      ? "tech-nav_item tech-nav_item_active"
+                      : "tech-nav_item"
+                  }
+                >
                   <h4>2</h4>
                 </li>
-                <li onClick={handleThirdTechData} className="tech-nav_item">
+                <li
+                  onClick={() => handleThirdTechData(2)}
+                  className={
+                    toggleTechTab == 2
+                      ? "tech-nav_item tech-nav_item_active"
+                      : "tech-nav_item"
+                  }
+                >
                   <h4>3</h4>
                 </li>
               </ul>
