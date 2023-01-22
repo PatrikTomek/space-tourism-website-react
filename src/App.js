@@ -10,10 +10,16 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/destination" element={<Destination />} />
-        <Route path="/crew" element={<Crew />} />
-        <Route path="/technology" element={<Technology />} />
+        <Route path="/space-tourism-website-react/" exact element={<Home />} />
+        <Route
+          path="/space-tourism-website-react/destination"
+          element={<Destination />}
+        />
+        <Route path="/space-tourism-website-react/crew" element={<Crew />} />
+        <Route
+          path="/space-tourism-website-react/technology"
+          element={<Technology />}
+        />
       </Routes>
     </BrowserRouter>
   );

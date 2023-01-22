@@ -18,22 +18,31 @@ const Navigation = () => {
       <div className="nav-line"></div>
       <nav className="main-nav">
         <ul className="main-nav_list">
-          <NavLink to="/">
+          <NavLink to="/space-tourism-website-react/">
             <li className="main-nav-home main-nav_item nav_item">
               <span className="main-nav_span">00</span>Home
             </li>
           </NavLink>
-          <NavLink to="/destination" className="main-nav_link">
+          <NavLink
+            to="/space-tourism-website-react/destination"
+            className="main-nav_link"
+          >
             <li className="main-nav_item nav_item">
               <span className="main-nav_span">01</span>Destination
             </li>
           </NavLink>
-          <NavLink to="/crew" className="main-nav_link">
+          <NavLink
+            to="/space-tourism-website-react/crew"
+            className="main-nav_link"
+          >
             <li className="main-nav_item nav_item">
               <span className="main-nav_span">02</span>Crew
             </li>
           </NavLink>
-          <NavLink to="/technology" className="main-nav_link">
+          <NavLink
+            to="/space-tourism-website-react/technology"
+            className="main-nav_link"
+          >
             <li className="main-nav_item nav_item">
               <span className="main-nav_span">03</span>Technology
             </li>
