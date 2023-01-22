@@ -55,7 +55,7 @@ const Crew = () => {
               <li
                 onClick={() => handleCommanderData(0)}
                 className={
-                  toggleCrewTab == 0
+                  toggleCrewTab === 0
                     ? "crew-nav_item_active crew-nav_item"
                     : "crew-nav_item"
                 }
@@ -63,7 +63,7 @@ const Crew = () => {
               <li
                 onClick={() => handleMissionSpecialistData(1)}
                 className={
-                  toggleCrewTab == 1
+                  toggleCrewTab === 1
                     ? "crew-nav_item_active crew-nav_item"
                     : "crew-nav_item"
                 }
@@ -71,7 +71,7 @@ const Crew = () => {
               <li
                 onClick={() => handlePilotData(2)}
                 className={
-                  toggleCrewTab == 2
+                  toggleCrewTab === 2
                     ? "crew-nav_item_active crew-nav_item"
                     : "crew-nav_item"
                 }
@@ -79,7 +79,7 @@ const Crew = () => {
               <li
                 onClick={() => handleFlightEngineerData(3)}
                 className={
-                  toggleCrewTab == 3
+                  toggleCrewTab === 3
                     ? "crew-nav_item_active crew-nav_item"
                     : "crew-nav_item"
                 }

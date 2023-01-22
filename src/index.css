@@ -270,6 +270,7 @@ h5 {
   line-height: 19px;
   letter-spacing: 2.7px;
   text-transform: uppercase;
+  padding-left: 2px;
 }
 .main-nav_span {
   margin-right: 11px;

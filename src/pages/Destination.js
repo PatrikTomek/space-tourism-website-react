@@ -50,7 +50,7 @@ const Destination = () => {
             <li
               onClick={() => handleMoonData(0)}
               className={
-                toggleDestTab == 0
+                toggleDestTab === 0
                   ? "destination-nav_item nav_item destination-nav_item__active"
                   : "destination-nav_item nav_item"
               }
@@ -60,7 +60,7 @@ const Destination = () => {
             <li
               onClick={() => handleMarsData(1)}
               className={
-                toggleDestTab == 1
+                toggleDestTab === 1
                   ? "destination-nav_item nav_item destination-nav_item__active"
                   : "destination-nav_item nav_item"
               }
@@ -70,7 +70,7 @@ const Destination = () => {
             <li
               onClick={() => handleEuropaData(2)}
               className={
-                toggleDestTab == 2
+                toggleDestTab === 2
                   ? "destination-nav_item nav_item destination-nav_item__active"
                   : "destination-nav_item nav_item"
               }
@@ -80,7 +80,7 @@ const Destination = () => {
             <li
               onClick={() => handleTitanData(3)}
               className={
-                toggleDestTab == 3
+                toggleDestTab === 3
                   ? "destination-nav_item nav_item destination-nav_item__active"
                   : "destination-nav_item nav_item"
               }

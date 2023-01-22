@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import data from "../data.json";
 import firstTechImg from "../assets/technology/image-launch-vehicle-portrait.jpg";
+import firstTechImgTablet from "../assets/technology/image-launch-vehicle-landscape.jpg";
 import secondTechImg from "../assets/technology/image-spaceport-portrait.jpg";
+import secondTechImgTablet from "../assets/technology/image-spaceport-landscape.jpg";
 import thirdTechImg from "../assets/technology/image-space-capsule-portrait.jpg";
+import thirdTechImgTablet from "../assets/technology/image-space-capsule-landscape.jpg";
 import Navigation from "../components/Navigation";
 
 const Technology = () => {
   const [techData, setTechData] = useState(data.technology[0]);
   const [techImg, setTechImg] = useState(firstTechImg);
+  const [techImgTablet, setTechImgTablet] = useState(firstTechImgTablet);
   const [toggleTechTab, setToggleTechTab] = useState(0);
 
   const firstTechData = data.technology[0];
@@ -17,16 +21,19 @@ const Technology = () => {
   const handleFirstTechData = (index) => {
     setTechData(firstTechData);
     setTechImg(firstTechImg);
+    setTechImgTablet(firstTechImgTablet);
     setToggleTechTab(index);
   };
   const handleSecondTechData = (index) => {
     setTechData(secondTechData);
     setTechImg(secondTechImg);
+    setTechImgTablet(secondTechImgTablet);
     setToggleTechTab(index);
   };
   const handleThirdTechData = (index) => {
     setTechData(thirdTechData);
     setTechImg(thirdTechImg);
+    setTechImgTablet(thirdTechImgTablet);
     setToggleTechTab(index);
   };
 
@@ -44,7 +51,7 @@ const Technology = () => {
                 <li
                   onClick={() => handleFirstTechData(0)}
                   className={
-                    toggleTechTab == 0
+                    toggleTechTab === 0
                       ? "tech-nav_item tech-nav_item_active"
                       : "tech-nav_item"
                   }
@@ -54,7 +61,7 @@ const Technology = () => {
                 <li
                   onClick={() => handleSecondTechData(1)}
                   className={
-                    toggleTechTab == 1
+                    toggleTechTab === 1
                       ? "tech-nav_item tech-nav_item_active"
                       : "tech-nav_item"
                   }
@@ -64,7 +71,7 @@ const Technology = () => {
                 <li
                   onClick={() => handleThirdTechData(2)}
                   className={
-                    toggleTechTab == 2
+                    toggleTechTab === 2
                       ? "tech-nav_item tech-nav_item_active"
                       : "tech-nav_item"
                   }
@@ -79,7 +86,10 @@ const Technology = () => {
               <p className="bio tech-bio">{techData.description}</p>
             </div>
           </div>
-          <img src={techImg} alt="" className="tech-img" />
+          <picture>
+            <source media="(max-width: 1350px)" srcset={techImgTablet} />
+            <img src={techImg} alt="" className="tech-img" />
+          </picture>
         </div>
       </div>
     </div>
