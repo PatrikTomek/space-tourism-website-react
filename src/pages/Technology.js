@@ -87,7 +87,7 @@ const Technology = () => {
             </div>
           </div>
           <picture>
-            <source media="(max-width: 1350px)" srcset={techImgTablet} />
+            <source media="(max-width: 1350px)" srcSet={techImgTablet} />
             <img src={techImg} alt="" className="tech-img" />
           </picture>
         </div>
