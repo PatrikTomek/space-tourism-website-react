@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/space-tourism-website-react/static/css/main.04a14c47.css",
-    "main.js": "/space-tourism-website-react/static/js/main.04b6ecef.js",
+    "main.css": "/space-tourism-website-react/static/css/main.4d9fb25c.css",
+    "main.js": "/space-tourism-website-react/static/js/main.8c6ec494.js",
     "static/media/image-victor-glover.png": "/space-tourism-website-react/static/media/image-victor-glover.8a9a5424588b73ec61c2.png",
     "static/media/image-anousheh-ansari.png": "/space-tourism-website-react/static/media/image-anousheh-ansari.2d647128496ddc638acd.png",
     "static/media/image-mark-shuttleworth.png": "/space-tourism-website-react/static/media/image-mark-shuttleworth.fc30f35b05fc0bc4ee47.png",
@@ -15,6 +15,7 @@
     "static/media/image-spaceport-portrait.jpg": "/space-tourism-website-react/static/media/image-spaceport-portrait.85523db5de13057f36ea.jpg",
     "static/media/image-spaceport-landscape.jpg": "/space-tourism-website-react/static/media/image-spaceport-landscape.0f3ca5c05a3e87191ea7.jpg",
     "static/media/background-crew-desktop.jpg": "/space-tourism-website-react/static/media/background-crew-desktop.88a3c692fd34eb311e04.jpg",
+    "static/media/background-destination-tablet.jpg": "/space-tourism-website-react/static/media/background-destination-tablet.8f55d346d8b6cfd95ab7.jpg",
     "static/media/image-titan.png": "/space-tourism-website-react/static/media/image-titan.d4b078f9ce17e686ae99.png",
     "static/media/background-technology-desktop.jpg": "/space-tourism-website-react/static/media/background-technology-desktop.b7b589b3c0c5ef0811d4.jpg",
     "static/media/background-crew-tablet.jpg": "/space-tourism-website-react/static/media/background-crew-tablet.16d51cf61e98ce45eb61.jpg",
@@ -24,12 +25,13 @@
     "static/media/background-home-mobile.jpg": "/space-tourism-website-react/static/media/background-home-mobile.13f7adecbcb3c3f170d8.jpg",
     "static/media/background-technology-tablet.jpg": "/space-tourism-website-react/static/media/background-technology-tablet.48c38b028217ee0096c4.jpg",
     "static/media/image-launch-vehicle-landscape.jpg": "/space-tourism-website-react/static/media/image-launch-vehicle-landscape.4281a59ff7186488fe6a.jpg",
+    "static/media/background-destination-mobile.jpg": "/space-tourism-website-react/static/media/background-destination-mobile.e0131e27e751ead1a922.jpg",
     "index.html": "/space-tourism-website-react/index.html",
-    "main.04a14c47.css.map": "/space-tourism-website-react/static/css/main.04a14c47.css.map",
-    "main.04b6ecef.js.map": "/space-tourism-website-react/static/js/main.04b6ecef.js.map"
+    "main.4d9fb25c.css.map": "/space-tourism-website-react/static/css/main.4d9fb25c.css.map",
+    "main.8c6ec494.js.map": "/space-tourism-website-react/static/js/main.8c6ec494.js.map"
   },
   "entrypoints": [
-    "static/css/main.04a14c47.css",
-    "static/js/main.04b6ecef.js"
+    "static/css/main.4d9fb25c.css",
+    "static/js/main.8c6ec494.js"
   ]
 }
