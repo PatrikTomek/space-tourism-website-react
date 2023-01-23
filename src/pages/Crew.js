@@ -38,7 +38,7 @@ const Crew = () => {
   };
 
   return (
-    <div className="container">
+    <div className="crew_full-container container">
       <div className="crew page_content-container">
         <Navigation />
         <h6 className="page_header">

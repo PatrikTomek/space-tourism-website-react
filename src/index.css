@@ -205,12 +205,13 @@ h5 {
 /* ------------------- */
 
 .container {
-  height: 100%;
+  height: 1024px;
   width: 100%;
+  max-width: 1750px;
+  margin-inline: auto;
 }
 .page_content-container {
   max-width: 1440px;
-  height: 900px;
   margin-inline: auto;
   border: 1px solid transparent;
 }
@@ -304,7 +305,9 @@ h5 {
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
 
-.home {
+/* Home */
+
+.home_full-container {
   background-image: url("./assets/home/background-home-desktop.jpg");
   background-size: cover;
 }
@@ -314,12 +317,18 @@ h5 {
   margin-left: 165px;
   margin-top: 387px;
 }
+.nav_hamburger {
+  display: none;
+}
+
+/* Destination */
 
 .planet_header {
   margin-top: 37px;
 }
-.destination {
+.destination_full-container {
   background-image: url("./assets/destination/background-destination-desktop.jpg");
+  background-size: cover;
 }
 
 .planet__text_container {
@@ -358,7 +367,7 @@ h5 {
 
 /* CREW */
 
-.crew {
+.crew_full-container {
   background-image: url("./assets/crew/background-crew-desktop.jpg");
   background-size: cover;
 }
@@ -422,7 +431,7 @@ h5 {
 
 /* Technology */
 
-.technology {
+.technology_full-container {
   background-image: url("./assets/technology/background-technology-desktop.jpg");
   background-size: cover;
 }
@@ -483,11 +492,12 @@ h5 {
 
 @media screen and (max-width: 1350px) {
   .container {
-    max-width: 768px;
+    width: 100%;
+    height: 100%;
     margin-inline: auto;
   }
   .page_content-container {
-    max-width: 768px;
+    width: 768px;
     height: 1024px;
     margin-inline: auto;
   }
@@ -505,8 +515,8 @@ h5 {
     margin-right: 10px;
   }
 
-  /* Homepage */
-  .home {
+  /* Homepage (tablet) */
+  .home_full-container {
     background-image: url("./assets/home/background-home-tablet.jpg");
     background-size: cover;
   }
@@ -516,8 +526,6 @@ h5 {
     margin-left: 39px;
     top: 0px;
     display: flex;
-  }
-  .logo {
   }
   .main-nav {
     width: 450px;
@@ -565,10 +573,10 @@ h5 {
     margin-left: 250px;
   }
 
-  /* Destination page */
+  /* Destination page (tablet) */
 
   .planet_img {
-    position: inherit;
+    position: static;
     width: 300px;
     height: 300px;
     margin-top: 60px;
@@ -616,9 +624,9 @@ h5 {
     width: 216px;
   }
 
-  /* Crew page */
+  /* Crew page (tablet) */
 
-  .crew {
+  .crew_full-container {
     background-image: url("./assets/crew/background-crew-tablet.jpg");
   }
   .crew-member {
@@ -671,9 +679,9 @@ h5 {
     margin-top: 40px;
   }
 
-  /* Technology page */
+  /* Technology page (tablet) */
 
-  .technology {
+  .technology_full-container {
     background-image: url("./assets/technology/background-technology-tablet.jpg");
   }
   .tech-content_container * {
@@ -726,5 +734,93 @@ h5 {
     font-size: 16px;
     line-height: 28px;
     margin-top: 16px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 788px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    width: 400px;
+  }
+  .page_content-container {
+    width: 375px;
+    height: 667px;
+  }
+  .main-nav {
+    display: none;
+  }
+
+  /* Homepage (mobile) */
+  .home_full-container {
+    background-image: url("./assets/home/background-home-mobile.jpg");
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home * {
+    margin: 0px;
+  }
+  .nav_container {
+    position: static;
+    width: auto;
+    height: auto;
+    width: 327px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-top: 24px;
+  }
+  .nav_hamburger {
+    display: block;
+    width: 24px;
+    height: 21px;
+    margin-top: 33px;
+  }
+  .nav_hamburger {
+    cursor: pointer;
+  }
+  .home_text_container {
+    height: 276px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+  }
+  .home_text_container h5 {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    margin-top: 0px;
+  }
+  .home_text_container h1 {
+    font-size: 80px;
+    line-height: 100px;
+    margin-top: 16px;
+  }
+  .home_text_container p {
+    margin: 0px;
+    height: 125px;
+    width: 327px;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 16px;
+  }
+  .lp-main_btn {
+    position: static;
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1.25px;
+    padding-top: 10px;
+    margin-top: 81px;
   }
 }

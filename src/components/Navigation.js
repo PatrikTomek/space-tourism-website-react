@@ -5,7 +5,7 @@ const Navigation = () => {
   return (
     <div className="nav_container">
       <div className="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 50 50">
           <g fill="none" fillRule="evenodd">
             <circle cx="24" cy="24" r="24" fill="#FFF" />
             <path
@@ -16,6 +16,13 @@ const Navigation = () => {
         </svg>
       </div>
       <div className="nav-line"></div>
+      <div className="nav_hamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+          <g fill="#D0D6F9" fillRule="evenodd">
+            <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+          </g>
+        </svg>
+      </div>
       <nav className="main-nav">
         <ul className="main-nav_list">
           <NavLink to="/space-tourism-website-react/">

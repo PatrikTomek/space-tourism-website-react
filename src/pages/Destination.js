@@ -38,7 +38,7 @@ const Destination = () => {
   };
 
   return (
-    <div className="container">
+    <div className="destination_full-container container">
       <div className="destination page_content-container">
         <Navigation />
         <h6 className="page_header">

@@ -4,7 +4,7 @@ import Navigation from "../components/Navigation";
 
 const Home = () => {
   return (
-    <div className="container">
+    <div className="home_full-container container">
       <div className="home page_content-container">
         <Navigation />
         <div className="home_text_container">

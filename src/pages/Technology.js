@@ -38,7 +38,7 @@ const Technology = () => {
   };
 
   return (
-    <div className="container">
+    <div className="technology_full-container container">
       <div className="technology page_content-container">
         <Navigation />
         <h6 className="page_header">
