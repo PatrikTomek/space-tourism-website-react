@@ -232,6 +232,9 @@ h5 {
   height: 48px;
   margin-block: auto;
 }
+.nav_close {
+  display: none;
+}
 .nav-line {
   position: absolute;
   width: 473px;
@@ -739,13 +742,15 @@ h5 {
 
 /* Mobile */
 @media screen and (max-width: 788px) {
+  body,
   .container {
-    width: 100%;
-    height: 100%;
-    width: 400px;
+    width: 375px;
+    height: 667px;
+    max-width: 100%;
+    margin-inline: auto;
   }
   .page_content-container {
-    width: 375px;
+    max-width: 375px;
     height: 667px;
   }
 
@@ -754,6 +759,7 @@ h5 {
     margin: 0px;
   }
   .nav_close {
+    display: flex;
     position: absolute;
     top: 33px;
     right: 26px;
@@ -878,5 +884,90 @@ h5 {
     letter-spacing: 1.25px;
     padding-top: 10px;
     margin-top: 81px;
+  }
+
+  /* Destination (mobile) */
+  .nav_container {
+    margin-inline: auto;
+  }
+  .planet__text_container,
+  .planet__text_container * {
+    margin: 0px;
+  }
+  .destination {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 850px;
+  }
+  .page_header {
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-align: center;
+    margin-inline: auto;
+    margin-top: 24px;
+  }
+  .page_header span {
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 18px;
+  }
+  .planet_img {
+    width: 170px;
+    height: 170px;
+    margin-inline: auto;
+    margin-top: 32px;
+  }
+  .planet__text_container {
+    width: auto;
+    height: auto;
+    margin-inline: auto;
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .destination-nav {
+    width: 237.5px;
+    height: 28px;
+    gap: 26px;
+  }
+  .destination-nav_item {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.36px;
+  }
+  .planet_header {
+    font-size: 56px;
+    line-height: 64px;
+    margin-top: 20px;
+  }
+  .p_planet {
+    width: 327px;
+    height: 125px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .planet_text_line {
+    width: 327px;
+    height: 1px;
+    margin-top: 32px;
+  }
+  .planet-details {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 32px;
+  }
+  .planet-details_containers {
+    width: auto;
+    height: 61px;
+  }
+  .planet-details_info {
+    margin-top: 12px;
   }
 }
