@@ -86,6 +86,7 @@ const Crew = () => {
               ></li>
             </ul>
           </nav>
+          <hr className="crew-line" />
           <img src={crewImg} alt="" className="crew-img" />
         </div>
       </div>

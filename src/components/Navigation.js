@@ -11,7 +11,10 @@ const Navigation = () => {
 
   return (
     <div className="nav_container">
-      <div className="logo">
+      <a
+        className="logo"
+        href="https://patriktomek.github.io/space-tourism-website-react/"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="100%"
@@ -26,7 +29,7 @@ const Navigation = () => {
             />
           </g>
         </svg>
-      </div>
+      </a>
       <div className="nav-line"></div>
       <div onClick={handleMobileNav} className="nav_hamburger">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
