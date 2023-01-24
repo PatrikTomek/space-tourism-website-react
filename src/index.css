@@ -780,6 +780,7 @@ h5 {
     display: flex;
     transition: width 500ms ease;
     overflow: hidden;
+    z-index: 5;
   }
   .open {
     width: 254px;
@@ -922,7 +923,7 @@ h5 {
   .page_header span {
     font-size: 16px;
     font-weight: 700;
-    margin-right: 18px;
+    margin-right: 10px;
   }
   .planet_img {
     width: 170px;
@@ -1026,5 +1027,52 @@ h5 {
   }
   .crew-nav {
     margin-top: 32px;
+  }
+
+  /* Technology (mobile) */
+  .technology_full-container {
+    background-image: url("./assets/technology/background-technology-mobile.jpg");
+  }
+  .tech-content_container {
+    margin-top: 32px;
+  }
+  .tech-img {
+    width: 375px;
+    height: 170px;
+  }
+  .tech-nav_list {
+    margin-top: 34px;
+    gap: 16px;
+  }
+  .tech-nav_item {
+    height: 40px;
+    width: 40px;
+  }
+  .tech-nav_item h4 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .technology-text_container {
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tech-intro {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.36px;
+  }
+  .tech-bio_header {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 9px;
+  }
+  .tech-bio {
+    width: 327px;
+    height: 175px;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 16px;
   }
 }
