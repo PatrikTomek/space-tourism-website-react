@@ -491,6 +491,19 @@ h5 {
   margin-top: -410px;
 }
 
+.attribution {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+.attribution a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
 /* RESPONSIVE */
 /* Tablet */
 
@@ -1053,6 +1066,8 @@ h5 {
     line-height: 18px;
   }
   .technology-text_container {
+    width: auto;
+    height: auto;
     margin-top: -40px;
     display: flex;
     flex-direction: column;
@@ -1074,5 +1089,9 @@ h5 {
     font-size: 15px;
     line-height: 25px;
     margin-top: 16px;
+  }
+  
+  .attribution {
+    margin-top: 100px;
   }
 }
