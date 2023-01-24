@@ -24,8 +24,14 @@ const Home = () => {
       </div>
       <p className="attribution">
         Challenge by
-        <a href="https://www.frontendmentor.io/home"> Frontend Mentor.</a> Coded
-        by <a href="https://patriktomek.cz/">Patrik Tomek</a>
+        <a href="https://www.frontendmentor.io/home" target="_blank">
+          {" "}
+          Frontend Mentor.
+        </a>{" "}
+        Coded by{" "}
+        <a href="https://patriktomek.cz/" target="_blank">
+          Patrik Tomek
+        </a>
       </p>
     </div>
   );

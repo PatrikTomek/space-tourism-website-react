@@ -432,6 +432,9 @@ h5 {
   margin-top: -608px;
   margin-right: 137px;
 }
+.crew-line {
+  display: none;
+}
 
 /* Technology */
 
@@ -502,6 +505,7 @@ h5 {
 }
 .attribution a {
   color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
 }
 
 /* RESPONSIVE */
@@ -1010,6 +1014,7 @@ h5 {
     height: 222px;
   }
   .crew-line {
+    display: flex;
     border: 1px solid rgba(56, 59, 75, 1);
     width: 327px;
     height: 0px;
@@ -1090,7 +1095,7 @@ h5 {
     line-height: 25px;
     margin-top: 16px;
   }
-  
+
   .attribution {
     margin-top: 100px;
   }
