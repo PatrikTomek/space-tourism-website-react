@@ -4,7 +4,13 @@ const MainBtn = () => {
   return (
     <div>
       <button className="lp-main_btn">
-        Explore
+        <a
+          href="https://github.com/PatrikTomek/space-tourism-website-react"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Explore
+        </a>
       </button>
     </div>
   );
