@@ -199,6 +199,7 @@ h5 {
   box-shadow: 0px 0px 0px 88px hsla(0, 0%, 100%, 0.1);
   cursor: pointer;
 }
+.lp-main_btn a:link,
 .lp-main_btn a:visited {
   color: var(--dark);
 }
@@ -890,6 +891,7 @@ h5 {
     font-size: 80px;
     line-height: 100px;
     margin-top: 16px;
+    width: auto;
   }
   .home_text_container p {
     margin: 0px;

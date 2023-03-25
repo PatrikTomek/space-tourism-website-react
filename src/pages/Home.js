@@ -24,12 +24,16 @@ const Home = () => {
       </div>
       <p className="attribution">
         Challenge by
-        <a href="https://www.frontendmentor.io/home" target="_blank">
+        <a
+          href="https://www.frontendmentor.io/home"
+          target="_blank"
+          rel="noreferrer"
+        >
           {" "}
           Frontend Mentor.
         </a>{" "}
         Coded by{" "}
-        <a href="https://patriktomek.cz/" target="_blank">
+        <a href="https://patriktomek.cz/" target="_blank" rel="noreferrer">
           Patrik Tomek
         </a>
       </p>
